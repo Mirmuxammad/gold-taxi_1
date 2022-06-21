@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="poppins.semibold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RideHistoryVC" customModule="TAXI" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="c2r-26-03T" id="RkE-Md-LxP"/>
+                <outlet property="tableView" destination="KJd-WZ-Owv" id="hFf-GR-RIr"/>
+                <outlet property="ttleLbl" destination="kid-j1-fGd" id="Pyr-u7-DTB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient_ride_history" translatesAutoresizingMaskIntoConstraints="NO" id="4Xb-9Z-dSj">
+                    <rect key="frame" x="0.0" y="-5" width="414" height="906"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="EC4-Si-ybg">
+                    <rect key="frame" x="16" y="124" width="382" height="648"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ride history" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kid-j1-fGd">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="28"/>
+                            <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="20"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zeu-hX-cc8">
+                            <rect key="frame" x="0.0" y="48" width="382" height="600"/>
+                            <subviews>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KJd-WZ-Owv">
+                                    <rect key="frame" x="3" y="3" width="376" height="597"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </tableView>
+                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="c2r-26-03T">
+                                    <rect key="frame" x="172.5" y="281.5" width="37" height="37"/>
+                                </activityIndicatorView>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="KJd-WZ-Owv" secondAttribute="bottom" id="EW9-sW-2kj"/>
+                                <constraint firstItem="KJd-WZ-Owv" firstAttribute="leading" secondItem="Zeu-hX-cc8" secondAttribute="leading" constant="3" id="MWp-gD-S10"/>
+                                <constraint firstItem="c2r-26-03T" firstAttribute="centerX" secondItem="Zeu-hX-cc8" secondAttribute="centerX" id="SNz-sD-D9j"/>
+                                <constraint firstAttribute="trailing" secondItem="KJd-WZ-Owv" secondAttribute="trailing" constant="3" id="WPQ-ut-TqY"/>
+                                <constraint firstItem="c2r-26-03T" firstAttribute="centerY" secondItem="Zeu-hX-cc8" secondAttribute="centerY" id="eDT-dc-2Ox"/>
+                                <constraint firstItem="KJd-WZ-Owv" firstAttribute="top" secondItem="Zeu-hX-cc8" secondAttribute="top" constant="3" id="oXt-9h-z72"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                    <real key="value" value="0.29999999999999999"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                    <size key="value" width="0.0" height="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFu-aE-SW4">
+                    <rect key="frame" x="20" y="64" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="4G6-bh-Y9x"/>
+                        <constraint firstAttribute="height" constant="24" id="QvA-cE-xm7"/>
+                    </constraints>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                    <state key="normal" image="backBtn"/>
+                    <connections>
+                        <action selector="backBtnPressed:" destination="-1" eventType="touchUpInside" id="8Kv-06-s8O"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4Xb-9Z-dSj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-5" id="3vQ-rk-5mg"/>
+                <constraint firstAttribute="trailing" secondItem="4Xb-9Z-dSj" secondAttribute="trailing" id="6tx-BB-meJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4Xb-9Z-dSj" secondAttribute="trailing" id="DKN-sH-J0Q"/>
+                <constraint firstItem="EC4-Si-ybg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IlF-Ae-IOG"/>
+                <constraint firstItem="EC4-Si-ybg" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="K9Z-cW-0AG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EC4-Si-ybg" secondAttribute="trailing" constant="16" id="KAL-BZ-pP5"/>
+                <constraint firstItem="mFu-aE-SW4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Wo4-f6-5FJ"/>
+                <constraint firstItem="4Xb-9Z-dSj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Xfm-em-rwo"/>
+                <constraint firstItem="mFu-aE-SW4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="aQc-Vm-pfn"/>
+                <constraint firstItem="KJd-WZ-Owv" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" multiplier="0.73" id="kLl-GB-nIs"/>
+                <constraint firstAttribute="bottom" secondItem="4Xb-9Z-dSj" secondAttribute="bottom" constant="-5" id="koE-Xm-mad"/>
+                <constraint firstItem="EC4-Si-ybg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="rfM-Yv-qkl"/>
+            </constraints>
+            <point key="canvasLocation" x="-114.49275362318842" y="71.651785714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backBtn" width="32" height="54"/>
+        <image name="gradient_ride_history" width="236" height="512"/>
+    </resources>
+</document>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="poppins.regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="poppins.semibold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OTPVC" customModule="TAXI" customModuleProvider="target">
+            <connections>
+                <outlet property="confirmBtn" destination="ydm-60-qlr" id="Jlr-qv-lpM"/>
+                <outlet property="progressView" destination="izS-1a-1Ca" id="c0l-3i-uMX"/>
+                <outlet property="refreshBtn" destination="QC0-Iy-fpY" id="8hf-S9-fpk"/>
+                <outlet property="secondLbl" destination="gv2-iN-HcA" id="J1V-NI-oTr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="textFields" destination="O5e-CR-Gtb" collectionClass="NSMutableArray" id="SOu-0G-TGZ"/>
+                <outletCollection property="textFields" destination="VOu-FM-nOI" collectionClass="NSMutableArray" id="oz2-40-99e"/>
+                <outletCollection property="textFields" destination="ENq-ks-AYi" collectionClass="NSMutableArray" id="CWP-ra-kj8"/>
+                <outletCollection property="textFields" destination="wrg-yz-Jv0" collectionClass="NSMutableArray" id="PqO-VD-A2h"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J9z-SU-Q6N">
+                    <rect key="frame" x="20" y="260" width="374" height="376"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="G7A-7z-BYY">
+                            <rect key="frame" x="18.5" y="71.5" width="337" height="233.5"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="syX-wr-J3Y">
+                                    <rect key="frame" x="93.5" y="0.0" width="150" height="33.5"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="5au-Sj-74l">
+                                            <rect key="frame" x="0.0" y="0.0" width="30" height="33.5"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O5e-CR-Gtb">
+                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="Ccl-Bm-8E0"/>
+                                                        <constraint firstAttribute="width" constant="30" id="jzt-5r-mmY"/>
+                                                    </constraints>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad" returnKeyType="next" textContentType="postal-code"/>
+                                                </textField>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7p6-ux-7XM">
+                                                    <rect key="frame" x="0.0" y="32" width="30" height="1.5"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1.5" id="ldb-zh-dgf"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="n0U-Hy-QQI">
+                                            <rect key="frame" x="40" y="0.0" width="30" height="33.5"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VOu-FM-nOI">
+                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="Wov-Bv-U29"/>
+                                                        <constraint firstAttribute="height" constant="30" id="n7S-BS-cb3"/>
+                                                    </constraints>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad" returnKeyType="next" textContentType="postal-code"/>
+                                                </textField>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YCC-4e-OMs">
+                                                    <rect key="frame" x="0.0" y="32" width="30" height="1.5"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1.5" id="OpF-qs-Qps"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Use-nP-w0Z">
+                                            <rect key="frame" x="80" y="0.0" width="30" height="33.5"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ENq-ks-AYi">
+                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="AqI-rq-RgM"/>
+                                                        <constraint firstAttribute="width" constant="30" id="YAe-K5-6kb"/>
+                                                    </constraints>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad" returnKeyType="next" textContentType="postal-code"/>
+                                                </textField>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XpX-36-jTl">
+                                                    <rect key="frame" x="0.0" y="32" width="30" height="1.5"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1.5" id="ppu-pk-Xqs"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Bc4-01-7RG">
+                                            <rect key="frame" x="120" y="0.0" width="30" height="33.5"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wrg-yz-Jv0">
+                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="Xqj-Jh-eYt"/>
+                                                        <constraint firstAttribute="height" constant="30" id="rH5-NB-GdV"/>
+                                                    </constraints>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad" returnKeyType="send" textContentType="postal-code"/>
+                                                </textField>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qxI-hx-GKg">
+                                                    <rect key="frame" x="0.0" y="32" width="30" height="1.5"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1.5" id="8Mj-fa-uIu"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6hV-Lu-OOm">
+                                    <rect key="frame" x="128.5" y="73.5" width="80" height="80"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QC0-Iy-fpY">
+                                            <rect key="frame" x="10" y="10" width="60" height="60"/>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" image="refresh"/>
+                                            <connections>
+                                                <action selector="refreshBtnPressed:" destination="-1" eventType="touchUpInside" id="gKK-zs-mk8"/>
+                                            </connections>
+                                        </button>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="izS-1a-1Ca">
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="120" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gv2-iN-HcA">
+                                                    <rect key="frame" x="27" y="27" width="26.5" height="25.5"/>
+                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="80" id="KYD-fq-oNv"/>
+                                                <constraint firstItem="gv2-iN-HcA" firstAttribute="centerX" secondItem="izS-1a-1Ca" secondAttribute="centerX" id="OZp-Xp-kAX"/>
+                                                <constraint firstAttribute="width" constant="80" id="lXR-N0-NcV"/>
+                                                <constraint firstItem="gv2-iN-HcA" firstAttribute="centerY" secondItem="izS-1a-1Ca" secondAttribute="centerY" id="zU7-Vs-3Uy"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="QC0-Iy-fpY" secondAttribute="trailing" constant="10" id="4aD-1V-285"/>
+                                        <constraint firstAttribute="bottom" secondItem="izS-1a-1Ca" secondAttribute="bottom" id="6oj-mk-SUI"/>
+                                        <constraint firstItem="QC0-Iy-fpY" firstAttribute="leading" secondItem="6hV-Lu-OOm" secondAttribute="leading" constant="10" id="8GD-9o-XEx"/>
+                                        <constraint firstItem="QC0-Iy-fpY" firstAttribute="top" secondItem="6hV-Lu-OOm" secondAttribute="top" constant="10" id="IDg-dA-3fn"/>
+                                        <constraint firstAttribute="trailing" secondItem="izS-1a-1Ca" secondAttribute="trailing" id="jVK-oT-k75"/>
+                                        <constraint firstItem="izS-1a-1Ca" firstAttribute="top" secondItem="6hV-Lu-OOm" secondAttribute="top" id="mex-QV-l44"/>
+                                        <constraint firstItem="izS-1a-1Ca" firstAttribute="leading" secondItem="6hV-Lu-OOm" secondAttribute="leading" id="s4v-M9-TBF"/>
+                                        <constraint firstAttribute="bottom" secondItem="QC0-Iy-fpY" secondAttribute="bottom" constant="10" id="sCp-yi-fWe"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydm-60-qlr">
+                                    <rect key="frame" x="0.0" y="193.5" width="337" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="Y9z-yC-Qv3"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="17"/>
+                                    <state key="normal" title="Verify" backgroundImage="btn_back">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="confitmBtnPressed:" destination="-1" eventType="touchUpInside" id="znd-yO-vFc"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ydm-60-qlr" firstAttribute="width" secondItem="J9z-SU-Q6N" secondAttribute="width" multiplier="0.9" id="C1g-2n-Dqv"/>
+                        <constraint firstItem="G7A-7z-BYY" firstAttribute="centerX" secondItem="J9z-SU-Q6N" secondAttribute="centerX" id="XAg-g1-ePz"/>
+                        <constraint firstItem="G7A-7z-BYY" firstAttribute="centerY" secondItem="J9z-SU-Q6N" secondAttribute="centerY" id="skT-AC-nxN"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                            <real key="value" value="0.10000000000000001"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                            <size key="value" width="0.0" height="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="J9z-SU-Q6N" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="CHZ-WH-C4Z"/>
+                <constraint firstItem="J9z-SU-Q6N" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="R2c-sp-Hsh"/>
+                <constraint firstItem="J9z-SU-Q6N" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" multiplier="0.45925" id="YBB-xJ-bAW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="J9z-SU-Q6N" secondAttribute="trailing" constant="20" id="nkw-lu-73c"/>
+            </constraints>
+            <point key="canvasLocation" x="-10" y="61"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_back" width="1212" height="180"/>
+        <image name="refresh" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="poppins.regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="87" id="KGk-i7-Jjw" customClass="SearchTVC" customModule="TAXI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OTR-Sq-56u">
+                        <rect key="frame" x="10" y="0.0" width="315" height="87"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gps" translatesAutoresizingMaskIntoConstraints="NO" id="cAQ-NX-9VY">
+                                <rect key="frame" x="10" y="26" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cAQ-NX-9VY" secondAttribute="height" multiplier="1:1" id="VfV-Mr-bVC"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6FR-tv-Ikc">
+                                <rect key="frame" x="65" y="10" width="230" height="72"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Margilan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0G-84-zNS">
+                                        <rect key="frame" x="0.0" y="0.0" width="230" height="24"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ferganskaya oblast Ferganskaya oblast Ferganskaya oblast" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ip-Cq-fwB">
+                                        <rect key="frame" x="0.0" y="24" width="230" height="48"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="6FR-tv-Ikc" secondAttribute="bottom" constant="5" id="2dn-JN-NeL"/>
+                            <constraint firstItem="cAQ-NX-9VY" firstAttribute="centerY" secondItem="OTR-Sq-56u" secondAttribute="centerY" id="AGz-Hd-DTZ"/>
+                            <constraint firstItem="6FR-tv-Ikc" firstAttribute="top" secondItem="OTR-Sq-56u" secondAttribute="top" constant="10" id="IiR-Fk-iol"/>
+                            <constraint firstItem="cAQ-NX-9VY" firstAttribute="top" relation="greaterThanOrEqual" secondItem="OTR-Sq-56u" secondAttribute="top" constant="10" id="JAU-tC-NGj"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="cAQ-NX-9VY" secondAttribute="bottom" constant="10" id="WUP-tl-BQd"/>
+                            <constraint firstItem="cAQ-NX-9VY" firstAttribute="height" secondItem="OTR-Sq-56u" secondAttribute="height" multiplier="0.4" id="eSl-36-0rj"/>
+                            <constraint firstItem="6FR-tv-Ikc" firstAttribute="leading" secondItem="cAQ-NX-9VY" secondAttribute="trailing" constant="20" id="g0k-v5-Vb1"/>
+                            <constraint firstItem="cAQ-NX-9VY" firstAttribute="leading" secondItem="OTR-Sq-56u" secondAttribute="leading" constant="10" id="nrA-kV-Tfp"/>
+                            <constraint firstAttribute="trailing" secondItem="6FR-tv-Ikc" secondAttribute="trailing" constant="20" id="qN3-61-gWj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="OTR-Sq-56u" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="0ab-aE-WMX"/>
+                    <constraint firstAttribute="bottom" secondItem="OTR-Sq-56u" secondAttribute="bottom" id="AGC-lX-FkO"/>
+                    <constraint firstAttribute="trailing" secondItem="OTR-Sq-56u" secondAttribute="trailing" constant="10" id="FFn-xo-Kbz"/>
+                    <constraint firstItem="OTR-Sq-56u" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="qFw-Gu-KD8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="descLbl" destination="1Ip-Cq-fwB" id="3SR-eW-Yjo"/>
+                <outlet property="imgView" destination="cAQ-NX-9VY" id="2er-kI-g80"/>
+                <outlet property="titleLbl" destination="m0G-84-zNS" id="zVW-IR-D7e"/>
+            </connections>
+            <point key="canvasLocation" x="-2.1739130434782612" y="48.549107142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gps" width="35" height="35"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

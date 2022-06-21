@@ -1,0 +1,60 @@
+PODS:
+  - Alamofire (5.6.1)
+  - lottie-ios (3.3.0)
+  - RAGTextField (0.14.0)
+  - Realm (10.25.2):
+    - Realm/Headers (= 10.25.2)
+  - Realm/Headers (10.25.2)
+  - RealmSwift (10.25.2):
+    - Realm (= 10.25.2)
+  - SDWebImage (5.12.5):
+    - SDWebImage/Core (= 5.12.5)
+  - SDWebImage/Core (5.12.5)
+  - SnapKit (5.0.1)
+  - Socket.IO-Client-Swift (15.2.0):
+    - Starscream (~> 3.1)
+  - Starscream (3.1.1)
+  - SwiftyJSON (5.0.1)
+  - YandexMapsMobile (4.0.0-full)
+
+DEPENDENCIES:
+  - Alamofire
+  - lottie-ios
+  - RAGTextField
+  - RealmSwift
+  - SDWebImage (~> 5.0)
+  - SnapKit (~> 5.0.0)
+  - Socket.IO-Client-Swift (= 15.2.0)
+  - SwiftyJSON
+  - YandexMapsMobile (= 4.0.0-full)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - lottie-ios
+    - RAGTextField
+    - Realm
+    - RealmSwift
+    - SDWebImage
+    - SnapKit
+    - Socket.IO-Client-Swift
+    - Starscream
+    - SwiftyJSON
+    - YandexMapsMobile
+
+SPEC CHECKSUMS:
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
+  RAGTextField: ebeab17ae88ce880a85601af33edc2879fa53813
+  Realm: 978303663d0509166498f423d112e5ee97d4c91b
+  RealmSwift: a0c30c1efc49e928a0a6f8fb141bb2629616d79b
+  SDWebImage: 0905f1b7760fc8ac4198cae0036600d67478751e
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  Socket.IO-Client-Swift: 1e3e3a1f09f3312a167f0d781eb2f383d477357c
+  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  YandexMapsMobile: 0f3d8c92fad685dc33d07f83eed4eb0166089743
+
+PODFILE CHECKSUM: 12da840eacc478293e24b4552a3c19b656bd6100
+
+COCOAPODS: 1.11.2

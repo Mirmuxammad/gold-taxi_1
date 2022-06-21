@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="poppins.semibold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderDetails" customModule="TAXI" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="fAo-VU-dLL" id="Zml-vw-TY4"/>
+                <outlet property="tableView" destination="MJt-yF-KPm" id="kpO-lR-MXK"/>
+                <outlet property="titleLbl" destination="WFC-na-1UB" id="08B-nf-nnw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fAo-VU-dLL" userLabel="containerView">
+                    <rect key="frame" x="0.0" y="160" width="414" height="736"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CdK-ad-0S5">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bee-sD-iEb">
+                                    <rect key="frame" x="155.5" y="5" width="103.5" height="5"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="5" id="Cu2-ai-J0N"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="2.5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFC-na-1UB">
+                                    <rect key="frame" x="5" y="15" width="404" height="50"/>
+                                    <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="25"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="WFC-na-1UB" secondAttribute="bottom" constant="5" id="2ad-hc-W9q"/>
+                                <constraint firstItem="WFC-na-1UB" firstAttribute="top" secondItem="CdK-ad-0S5" secondAttribute="top" constant="15" id="4PP-BB-4YE"/>
+                                <constraint firstAttribute="height" constant="70" id="E07-zE-Ipn"/>
+                                <constraint firstAttribute="trailing" secondItem="WFC-na-1UB" secondAttribute="trailing" constant="5" id="EVQ-Vg-w87"/>
+                                <constraint firstItem="bee-sD-iEb" firstAttribute="width" secondItem="CdK-ad-0S5" secondAttribute="width" multiplier="0.25" id="Gzk-kb-MMN"/>
+                                <constraint firstItem="bee-sD-iEb" firstAttribute="top" secondItem="CdK-ad-0S5" secondAttribute="top" constant="5" id="UnM-QX-y1p"/>
+                                <constraint firstItem="bee-sD-iEb" firstAttribute="centerX" secondItem="CdK-ad-0S5" secondAttribute="centerX" id="lIi-yh-1hA"/>
+                                <constraint firstItem="WFC-na-1UB" firstAttribute="leading" secondItem="CdK-ad-0S5" secondAttribute="leading" constant="5" id="ofL-5j-DcN"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MJt-yF-KPm">
+                            <rect key="frame" x="0.0" y="70" width="414" height="666"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96470588235294119" green="0.96469980479999995" blue="0.96471446750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="CdK-ad-0S5" secondAttribute="trailing" id="1sY-Nb-nbW"/>
+                        <constraint firstAttribute="trailing" secondItem="MJt-yF-KPm" secondAttribute="trailing" id="8yf-ku-2YH"/>
+                        <constraint firstItem="MJt-yF-KPm" firstAttribute="leading" secondItem="fAo-VU-dLL" secondAttribute="leading" id="R6R-vn-IcK"/>
+                        <constraint firstItem="MJt-yF-KPm" firstAttribute="top" secondItem="CdK-ad-0S5" secondAttribute="bottom" id="fbV-cw-pco"/>
+                        <constraint firstAttribute="bottom" secondItem="MJt-yF-KPm" secondAttribute="bottom" id="p4k-VZ-6TD"/>
+                        <constraint firstItem="CdK-ad-0S5" firstAttribute="top" secondItem="fAo-VU-dLL" secondAttribute="top" id="wfw-pM-5Pn"/>
+                        <constraint firstItem="CdK-ad-0S5" firstAttribute="leading" secondItem="fAo-VU-dLL" secondAttribute="leading" id="zih-YX-Pho"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fAo-VU-dLL" secondAttribute="trailing" id="02z-TS-WSw"/>
+                <constraint firstItem="fAo-VU-dLL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="FJf-wu-veB"/>
+                <constraint firstItem="fAo-VU-dLL" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="GcF-8y-PvM"/>
+                <constraint firstItem="fAo-VU-dLL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="QdK-fx-qgi"/>
+                <constraint firstItem="fAo-VU-dLL" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" multiplier="0.9" id="Rq1-4D-ggw"/>
+                <constraint firstAttribute="bottom" secondItem="fAo-VU-dLL" secondAttribute="bottom" id="fGL-Bq-hBn"/>
+            </constraints>
+            <point key="canvasLocation" x="-146.37681159420291" y="75"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

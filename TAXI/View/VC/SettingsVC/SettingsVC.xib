@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="poppins.semibold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsVC" customModule="TAXI" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="rKi-nL-T3z" id="7FD-tj-gXv"/>
+                <outlet property="ttleLbl" destination="emd-H9-5mP" id="o4B-zf-PM1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="oVL-QJ-Sph">
+                    <rect key="frame" x="16" y="149.5" width="382" height="597"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emd-H9-5mP">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="31"/>
+                            <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="22"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lZW-xR-uaj">
+                            <rect key="frame" x="0.0" y="81" width="382" height="516"/>
+                            <subviews>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rKi-nL-T3z">
+                                    <rect key="frame" x="3" y="3" width="376" height="510"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </tableView>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="rKi-nL-T3z" secondAttribute="trailing" constant="3" id="IUu-7S-1Bj"/>
+                                <constraint firstItem="rKi-nL-T3z" firstAttribute="top" secondItem="lZW-xR-uaj" secondAttribute="top" constant="3" id="J27-rn-AF7"/>
+                                <constraint firstItem="rKi-nL-T3z" firstAttribute="leading" secondItem="lZW-xR-uaj" secondAttribute="leading" constant="3" id="MnE-vp-rbS"/>
+                                <constraint firstAttribute="bottom" secondItem="rKi-nL-T3z" secondAttribute="bottom" constant="3" id="rXi-ND-wW7"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                    <real key="value" value="0.29999999999999999"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                    <size key="value" width="0.0" height="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXH-AG-Avz">
+                    <rect key="frame" x="20" y="64" width="24" height="24"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="FQH-UO-lWP"/>
+                        <constraint firstAttribute="width" constant="24" id="JpH-Nn-5g0"/>
+                    </constraints>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                    <state key="normal" image="backBtn"/>
+                    <connections>
+                        <action selector="backBtnPressed:" destination="-1" eventType="touchUpInside" id="vH0-VR-pzm"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rKi-nL-T3z" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" multiplier="0.55" constant="60" id="2xW-iy-9OM"/>
+                <constraint firstItem="oVL-QJ-Sph" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Hbr-rn-mX4"/>
+                <constraint firstItem="EXH-AG-Avz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="kBB-ju-t0z"/>
+                <constraint firstItem="oVL-QJ-Sph" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="kcw-1Y-hwM"/>
+                <constraint firstItem="oVL-QJ-Sph" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="sTM-sf-6Ye"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oVL-QJ-Sph" secondAttribute="trailing" constant="16" id="vUB-94-wIo"/>
+                <constraint firstItem="EXH-AG-Avz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="yXD-Wj-zSF"/>
+            </constraints>
+            <point key="canvasLocation" x="-26.086956521739133" y="71.651785714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backBtn" width="32" height="54"/>
+    </resources>
+</document>
