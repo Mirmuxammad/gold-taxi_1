@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		38C6CE1C5BEC1F0293619709 /* Pods_TAXI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5167D320EC7D52BCC04C8B28 /* Pods_TAXI.framework */; };
 		7C32B1F7260A354300C367DE /* RideForSomeoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C32B1F5260A354300C367DE /* RideForSomeoneVC.swift */; };
 		7C32B1F8260A354300C367DE /* RideForSomeoneVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C32B1F6260A354300C367DE /* RideForSomeoneVC.xib */; };
 		7C55C617260B0982002B33B2 /* PaymentMethodTVCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C55C615260B0982002B33B2 /* PaymentMethodTVCTableViewCell.swift */; };
@@ -42,6 +41,7 @@
 		ACED5FD525CADE940097CC02 /* FindCarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACED5FD325CADE940097CC02 /* FindCarVC.xib */; };
 		ACED5FE425CAEAF00097CC02 /* CarsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACED5FE225CAEAF00097CC02 /* CarsCVC.swift */; };
 		ACED5FE525CAEAF00097CC02 /* CarsCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACED5FE325CAEAF00097CC02 /* CarsCVC.xib */; };
+		CB2D3B1E33D999B89DFF6726 /* Pods_TAXI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CFE59906B8DEBA9DE094A3 /* Pods_TAXI.framework */; };
 		DC0AB37625D0006F00A5F7C5 /* ChatDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0AB37525D0006F00A5F7C5 /* ChatDM.swift */; };
 		DC0AB37C25D0008900A5F7C5 /* UserBubbleTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC0AB37A25D0008900A5F7C5 /* UserBubbleTVC.xib */; };
 		DC0AB37D25D0008900A5F7C5 /* UserBubbleTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0AB37B25D0008900A5F7C5 /* UserBubbleTVC.swift */; };
@@ -150,8 +150,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		31E2FCBDAB9AB4DE38DA229B /* Pods-TAXI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAXI.release.xcconfig"; path = "Target Support Files/Pods-TAXI/Pods-TAXI.release.xcconfig"; sourceTree = "<group>"; };
-		5167D320EC7D52BCC04C8B28 /* Pods_TAXI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TAXI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05CFE59906B8DEBA9DE094A3 /* Pods_TAXI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TAXI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C32B1F5260A354300C367DE /* RideForSomeoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideForSomeoneVC.swift; sourceTree = "<group>"; };
 		7C32B1F6260A354300C367DE /* RideForSomeoneVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RideForSomeoneVC.xib; sourceTree = "<group>"; };
 		7C55C615260B0982002B33B2 /* PaymentMethodTVCTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodTVCTableViewCell.swift; sourceTree = "<group>"; };
@@ -174,6 +173,8 @@
 		7C64F43525EBE59F006997CF /* Debug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debug.swift; sourceTree = "<group>"; };
 		7C64F43925EC069B006997CF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7CCC8E5725C9439D00EF6013 /* FirstLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLocationVC.swift; sourceTree = "<group>"; };
+		87D98FC1991C4C98F3DB4536 /* Pods-TAXI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAXI.debug.xcconfig"; path = "Target Support Files/Pods-TAXI/Pods-TAXI.debug.xcconfig"; sourceTree = "<group>"; };
+		8EC57F2E96CD503657D91E48 /* Pods-TAXI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAXI.release.xcconfig"; path = "Target Support Files/Pods-TAXI/Pods-TAXI.release.xcconfig"; sourceTree = "<group>"; };
 		AC5183B725CD880E00F67CF7 /* PayCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PayCVCell.xib; sourceTree = "<group>"; };
 		AC5183BC25CD882100F67CF7 /* PayCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayCVCell.swift; sourceTree = "<group>"; };
 		AC5183C825CD886B00F67CF7 /* PayVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PayVC.xib; sourceTree = "<group>"; };
@@ -214,7 +215,6 @@
 		DC1A1FFC25D40A11001EA2A1 /* SkeletonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkeletonView.swift; sourceTree = "<group>"; };
 		DC2783C725C7D20700F0EF5E /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		DC2783C825C7D20700F0EF5E /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
-		DC366DF8ECAC597B67685BF6 /* Pods-TAXI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAXI.debug.xcconfig"; path = "Target Support Files/Pods-TAXI/Pods-TAXI.debug.xcconfig"; sourceTree = "<group>"; };
 		DC3D37642603241800C3307E /* LanguageNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageNotification.swift; sourceTree = "<group>"; };
 		DC47D92426038D6000F59406 /* AddCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardVC.swift; sourceTree = "<group>"; };
 		DC47D92526038D6000F59406 /* AddCardVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddCardVC.xib; sourceTree = "<group>"; };
@@ -304,7 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C64F42F25EBAC17006997CF /* MapKit.framework in Frameworks */,
-				38C6CE1C5BEC1F0293619709 /* Pods_TAXI.framework in Frameworks */,
+				CB2D3B1E33D999B89DFF6726 /* Pods_TAXI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +315,7 @@
 			isa = PBXGroup;
 			children = (
 				7C64F42E25EBAC17006997CF /* MapKit.framework */,
-				5167D320EC7D52BCC04C8B28 /* Pods_TAXI.framework */,
+				05CFE59906B8DEBA9DE094A3 /* Pods_TAXI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -873,8 +873,8 @@
 		F8DA456EE92DD9A7AC22E720 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DC366DF8ECAC597B67685BF6 /* Pods-TAXI.debug.xcconfig */,
-				31E2FCBDAB9AB4DE38DA229B /* Pods-TAXI.release.xcconfig */,
+				87D98FC1991C4C98F3DB4536 /* Pods-TAXI.debug.xcconfig */,
+				8EC57F2E96CD503657D91E48 /* Pods-TAXI.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -886,12 +886,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC987D1C25BDEC9600AAD09C /* Build configuration list for PBXNativeTarget "TAXI" */;
 			buildPhases = (
-				E4FF5AF85444E7FF50469DAC /* [CP] Check Pods Manifest.lock */,
+				421763B95DEB302242D82728 /* [CP] Check Pods Manifest.lock */,
 				DC987CEE25BDEC9300AAD09C /* Sources */,
 				DC987CEF25BDEC9300AAD09C /* Frameworks */,
 				DC987CF025BDEC9300AAD09C /* Resources */,
-				98D09322AA0CA6C530FB43C2 /* [CP] Embed Pods Frameworks */,
-				73F86392534EF987E9AE6FC2 /* [CP] Copy Pods Resources */,
+				00B141688386D429208AE16F /* [CP] Embed Pods Frameworks */,
+				CDA86DA17440A252D9C2384C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -997,24 +997,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		73F86392534EF987E9AE6FC2 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TAXI/Pods-TAXI-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TAXI/Pods-TAXI-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TAXI/Pods-TAXI-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		98D09322AA0CA6C530FB43C2 /* [CP] Embed Pods Frameworks */ = {
+		00B141688386D429208AE16F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1031,7 +1014,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TAXI/Pods-TAXI-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E4FF5AF85444E7FF50469DAC /* [CP] Check Pods Manifest.lock */ = {
+		421763B95DEB302242D82728 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1051,6 +1034,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDA86DA17440A252D9C2384C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TAXI/Pods-TAXI-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TAXI/Pods-TAXI-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TAXI/Pods-TAXI-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1281,14 +1281,15 @@
 		};
 		DC987D1D25BDEC9600AAD09C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC366DF8ECAC597B67685BF6 /* Pods-TAXI.debug.xcconfig */;
+			baseConfigurationReference = 87D98FC1991C4C98F3DB4536 /* Pods-TAXI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TAXI/TAXI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 25;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = G2225WD3CL;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = TAXI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1296,7 +1297,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.25;
-				PRODUCT_BUNDLE_IDENTIFIER = uz.tesseract.dyod;
+				PRODUCT_BUNDLE_IDENTIFIER = uz.tesseract.dyod.gold;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1305,14 +1306,15 @@
 		};
 		DC987D1E25BDEC9600AAD09C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 31E2FCBDAB9AB4DE38DA229B /* Pods-TAXI.release.xcconfig */;
+			baseConfigurationReference = 8EC57F2E96CD503657D91E48 /* Pods-TAXI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TAXI/TAXI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 25;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = G2225WD3CL;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = TAXI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1320,7 +1322,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.25;
-				PRODUCT_BUNDLE_IDENTIFIER = uz.tesseract.dyod;
+				PRODUCT_BUNDLE_IDENTIFIER = uz.tesseract.dyod.gold;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
